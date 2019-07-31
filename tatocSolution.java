@@ -59,7 +59,7 @@ public class tatocSolution
 	{
 		Actions act = new Actions(driver);
 		WebElement drag= driver.findElement(By.id("dragbox"));
-		WebElement drop = driver.findElement(By.id("dropbox"));
+		WebElement drop = driver.findElement(By.id("drop"));
 		act.dragAndDrop(drag, drop).build().perform();
 		driver.findElement(By.linkText("Proceed")).click();
 
